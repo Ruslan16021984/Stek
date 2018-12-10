@@ -22,7 +22,7 @@ public class Stack {
 	public void getRemoveStek(Object object) {
 		int n = 0;
 		for (int i = 0; i < stek.length; i++) {
-			if (stek[i] == object) {
+			if (stek[i].equals(object)) {
 				n++;
 				System.out.println("Object " + stek[i] + " был найден на  " + (i + 1) + " позиции и успешно удален!");
 				Object[] tempOne = new Object[stek.length - 1];
